@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH ls -l /usr/bin/ | grep -v ^l | wc -l
+echo $PATH | tr -s ":" "\n" | wc -l
